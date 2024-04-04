@@ -37,4 +37,8 @@ public class PatientRestController {
         patientRepository.deleteById(id);
         return "redirect:/index";
     }
+    @GetMapping("/")
+    public String home(){
+        return "redirect:/index";
+    }
 }
